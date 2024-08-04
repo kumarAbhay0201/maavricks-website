@@ -44,9 +44,12 @@ class Appbarr extends StatelessWidget implements PreferredSizeWidget {
                   ),
                 ]
               : [
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Text('Amazon Store'),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Amazon Store'),
+                    ),
                   ),
                 ],
         );

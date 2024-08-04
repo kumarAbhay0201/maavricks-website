@@ -10,16 +10,17 @@ class Product extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth < 1079) {
-          // Screen width is less than 1079, use a Column
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ProductCard(
-                productName: products[0][0],
-                productDescription: products[0][1],
-                productImage: products[0][2],
-                productPrice: products[0][3],
+              Center(
+                child: ProductCard(
+                  productName: products[0][0],
+                  productDescription: products[0][1],
+                  productImage: products[0][2],
+                  productPrice: products[0][3],
+                ),
               ),
               const SizedBox(height: 30),
               ProductCard(
@@ -41,7 +42,7 @@ class Product extends StatelessWidget {
           // Screen width is greater than or equal to 1079, use a Row
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ProductCard(
                 productName: products[0][0],
