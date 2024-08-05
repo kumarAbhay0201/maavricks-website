@@ -11,7 +11,7 @@ class Footer extends StatelessWidget {
       child: Column(
         children: [
           const Text(
-            'Copyright @ Niga company',
+            'Copyright © Maavricks',
             style: TextStyle(color: Colors.white),
           ),
           const SizedBox(height: 40),
